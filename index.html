@@ -1,100 +1,16 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .container {
-            width:70vw;
-            margin: 40 auto;
-            font-family: sans-serif;
-        }
-        .jars {
-            display: flex;
-            justify-content: space-around;
-        }
-        .jar, .buttons {
-            display: flex;
-            justify-content: center;
-        }
-        .title{
-            margin: 40px 0;
-        }
-        h1,h4 {
-            color:rgb(66, 70, 77);
-            text-align: center;
-        }
-        .jar {
-            border: solid rgb(141, 146, 155) 1px;
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            padding: 8px;
-        }
-        .buttons {
-            margin: 16px;
-        }
-        .jar1 {
-            cursor: no-drop;
-        }
-        .jar1 > input {
-            pointer-events: none;
-        }
-        .jar > .ball {
-            flex: 0 0 auto;
-        }
-        button {
-            margin: 4px;
-            padding: 8px;
-        }
-        .ball {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin: 4px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-        }
-        .purple {
-            background-color: purple;
-        }
-        .orange {
-            background-color: orange;
-        }
-        input {
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="src/style.css">
     <title>Jar Game</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="title">
-            <h1>Which jar is throwing balls?</h1>
-            <h4>How many balls do you need to be sure?</h4>
-        </div>
-        <div class="jars">
-            <div class="jar jar1">
-                <span>A:</span>
-                <div class="ball purple">50%</div>
-                <input type="range" min="0" max="1" step="0.05">
-                <div class="ball orange">50%</div>
-            </div>
-            <div class="jar jar2">
-                <span>B:</span>
-                <div class="ball purple"id="purpleBall">50%</div>
-                <input id="slider" type="range" min="0" max="1" step="0.01">
-                <div class="ball orange" id="orangeBall">50%</div>
-            </div>
-        </div>
-        <div class="buttons">
-            <button id="get-ball">Get a Ball!</button>
-            <button id="reset">Reset</button>
-        </div>
-        <div id="result"></div>
-    </div>
-    <script type="module" src="index.js"></script>
+    <div class="container"></div>
+    <script type="module" src="src/index.tsx"></script>
 </body>
+
 </html>
