@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel -p 8888 index.html",
-    "build": "parcel build --dist-dir docs --no-source-maps index.html" 
+    "build": "parcel build --dist-dir docs --no-source-maps --public-url . index.html" 
   },
   "dependencies": {
     "@types/react": "^18.0.8",
